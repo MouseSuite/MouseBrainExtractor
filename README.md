@@ -10,7 +10,7 @@ Our global absolute positional encodings, indicated by `G`, are based on a set o
 https://doi.org/10.48550/arXiv.1706.03762), [Wang, 2019]( 	
 https://doi.org/10.48550/arXiv.1908.11415), [multidim-positional-encoding](github.com/tatp22/multidim-positional-encoding)):
 
-![Alt text](/figs/GPE_eqs.png?raw=true)
+<img src="./figs/GPE_eqs.png" width="256"/>
 
 where `c = C/3 `and `k` represents the alternating indices of the fourth dimension of `G`. This last dimension contains the embedding vectors that represent each voxel position. The image coordinates `x`, `y`, `z` are rescaled to the range `[0, 10]` based on the initial input image size.
 
