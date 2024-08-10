@@ -31,17 +31,18 @@ Docker images require admin/sudo privileges. If you cannot or wish not to run Do
 1. (Pre-requisite) Install Docker by following instructions [here](https://docs.docker.com/get-docker/).
 2. Run the following command in the terminal:
 ```
-docker run -ti --rm --gpus all -v ${data_directory}:/data mbe -i /data/${image_file} -o /data/${output_file} --dstype ${dataset_type}
+docker run -ti --rm --gpus all -v ${data_directory}:/data yeunkim/mbe -i /data/${image_file} -o /data/${output_file} --dstype ${dataset_type}
 ```
 where `${data_directory}` indicates the folder that contains your image file, `${image_file}` is the MRI image file name, and `${dataset_type}` is the dataset type (`invivo_iso`, `invivo_aniso`, `exvivo`). The `--gpus all` option enables GPUs, however, if you do not have GPUs, it will automatically use CPUs.
 
 You can type following to see other flag options:
 ```
-docker run -ti --rm -v ${data_directory}:/data mbe -h
+docker run -ti --rm -v ${data_directory}:/data yeunkim/mbe -h
 ```
 
 ### Running brain extraction using Singularity
 Singularity restricts escalated privileges (don't require admin privileges) and is recommended for multi-user machines.
+You can download the singularity image from [here](https://users.bmap.ucla.edu/~yeunkim/mbe.img).
 
 1. (Pre-requisite) Install Singularity by following their instructions [here](https://docs.sylabs.io/guides/3.0/user-guide/installation.html).
 2. Run the following command in the terminal:
