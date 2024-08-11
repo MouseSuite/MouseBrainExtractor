@@ -4,7 +4,7 @@ Copyright (C) 2024 The Regents of the University of California
 Created by Yeun Kim
 
 Except where otherwise noted, the source files contained within the
-BrainSuite BIDS App are licenced under the GNU General Public License
+Mouse Brain Extractor are licenced under the GNU General Public License
 v2.0 only (GPL-2.0-only; https://spdx.org/licenses/GPL-2.0-only.html).
 
 For more information, contact: support@brainsuite.org or
@@ -28,7 +28,7 @@ along with this program; if not, write to the Free Software
 Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301,
 USA.
 
-The BrainSuite BIDS App makes use of several additional tools and libraries.
+The Mouse Brain Extractor makes use of several additional tools and libraries.
 Licenses for each of these are detailed in the LICENSES folder.
 
 ________________________________________________________________________________
