@@ -1,8 +1,8 @@
-# Mouse Brain Extractor Tool #
+# Mouse Brain Extractor #
 
 ![Alt text](/figs/1_network_diagram.png?raw=true)
 
-Mouse Brain Extractor tool is a deep-learning-based method for segmenting the brain from mouse T2- and T1-weighted MRI data. Our method builds upon the SwinUNETR model ([Hatamizadeh, 2021]( 	
+Mouse Brain Extractor is a deep-learning-based method for segmenting the brain from mouse T2- and T1-weighted MRI data. Our method builds upon the SwinUNETR model ([Hatamizadeh, 2021]( 	
 https://doi.org/10.48550/arXiv.2201.01266)) and incorporates global positional encodings (GPEs).
 The addition of GPEs help boost segmentation accuracy in processing images at their native resolutions.
 
