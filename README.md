@@ -14,7 +14,7 @@ https://doi.org/10.48550/arXiv.1908.11415), [multidim-positional-encoding](githu
 
 where `c = C/3 `and `k` represents the alternating indices of the fourth dimension of `G`. This last dimension contains the embedding vectors that represent each voxel position. The image coordinates `x`, `y`, `z` are rescaled to the range `[0, 10]` based on the initial input image size.
 
-We have pre-trained weights available for the following datasets (www.users.bmap.ucla.edu/~yeunkim/MBE_weights.tar.gz):
+We have pre-trained weights available for the following datasets [users.bmap.ucla.edu/~yeunkim/MBE_weights.tar.gz](http://users.bmap.ucla.edu/~yeunkim/MBE_weights.tar.gz):
 
 * in vivo isotropic datasets (`invivo_iso`)
 * in vivo anisotropic datasets (large coronal slice thicknesses, where anisotropy ratio > 3) (`invivo_aniso`)
