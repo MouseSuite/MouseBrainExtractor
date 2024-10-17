@@ -14,7 +14,7 @@ https://doi.org/10.48550/arXiv.1908.11415), [multidim-positional-encoding](githu
 
 where `c = C/3 `and `k` represents the alternating indices of the fourth dimension of `G`. This last dimension contains the embedding vectors that represent each voxel position. The image coordinates `x`, `y`, `z` are rescaled to the range `[0, 10]` based on the initial input image size.
 
-We have pre-trained weights available for the following datasets [users.bmap.ucla.edu/~yeunkim/MBE_weights.tar.gz](http://users.bmap.ucla.edu/~yeunkim/MBE_weights.tar.gz):
+We have pre-trained weights available at [https://mousesuite.org/downloads/MBE_weights.tar.gz](https://mousesuite.org/downloads/MBE_weights.tar.gz) for the following datasets:
 
 * in vivo isotropic datasets (`invivo_iso`)
 * in vivo anisotropic datasets (large coronal slice thicknesses, where anisotropy ratio > 3) (`invivo_aniso`)
@@ -42,7 +42,7 @@ docker run -ti --rm -v ${data_directory}:/data yeunkim/mbe -h
 
 ### Running brain extraction using Singularity
 Singularity restricts escalated privileges (don't require admin privileges) and is recommended for multi-user machines.
-You can download the singularity image from [here](http://users.bmap.ucla.edu/~yeunkim/mbe.img).
+You can download the singularity image from [here](https://mousesuite.org/downloads/MBE/mbe.img).
 
 1. (Pre-requisite) Install Singularity by following their instructions [here](https://docs.sylabs.io/guides/3.0/user-guide/installation.html).
 2. Run the following command in the terminal:
