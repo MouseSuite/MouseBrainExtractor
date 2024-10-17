@@ -42,7 +42,7 @@ docker run -ti --rm -v ${data_directory}:/data yeunkim/mbe -h
 
 ### Running brain extraction using Singularity
 Singularity restricts escalated privileges (don't require admin privileges) and is recommended for multi-user machines.
-You can download the singularity image from [here](https://users.bmap.ucla.edu/~yeunkim/mbe.img).
+You can download the singularity image from [here](http://users.bmap.ucla.edu/~yeunkim/mbe.img).
 
 1. (Pre-requisite) Install Singularity by following their instructions [here](https://docs.sylabs.io/guides/3.0/user-guide/installation.html).
 2. Run the following command in the terminal:
