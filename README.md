@@ -14,7 +14,7 @@ https://doi.org/10.48550/arXiv.1908.11415), [multidim-positional-encoding](githu
 
 where `c = C/3 `and `k` represents the alternating indices of the fourth dimension of `G`. This last dimension contains the embedding vectors that represent each voxel position. The image coordinates `x`, `y`, `z` are rescaled to the range `[0, 10]` based on the initial input image size.
 
-We have pre-trained weights available at [https://mousesuite.org/downloads/mbe/MBE_weights.tar.gz](https://mousesuite.org/downloads/mbe/MBE_weights.tar.gz) for the following datasets:
+We have pre-trained weights available at [https://data.mousesuite.org/mbe/MBE_weights.tar.gz](https://data.mousesuite.org/mbe/MBE_weights.tar.gz) for the following datasets:
 
 * in vivo isotropic datasets (`invivo_iso`)
 * in vivo anisotropic datasets (large coronal slice thicknesses, where anisotropy ratio > 3) (`invivo_aniso`)
@@ -42,7 +42,7 @@ docker run -ti --rm -v ${data_directory}:/data yeunkim/mbe -h
 
 ### Running brain extraction using Singularity
 Singularity restricts escalated privileges (don't require admin privileges) and is recommended for multi-user machines.
-You can download the singularity image from [here](https://mousesuite.org/downloads/mbe/mbe.img).
+You can download the singularity image from [here](https://data.mousesuite.org/mbe/mbe.img).
 
 1. (Pre-requisite) Install Singularity by following their instructions [here](https://docs.sylabs.io/guides/3.0/user-guide/installation.html).
 2. Run the following command in the terminal:
@@ -68,7 +68,7 @@ pip install torch torchvision monai==1.3.0 nilearn scikit-image
 pip install "monai[einops]"
 ```
 
-All our weights can be downloaded from [here](https://mousesuite.org/downloads/mbe/MBE_weights.tar.gz) as a tar file (approximately 531 MB). 
+All our weights can be downloaded from [here](https://data.mousesuite.org/mbe/MBE_weights.tar.gz) as a tar file (approximately 531 MB). 
 
 General usage:
 ```
